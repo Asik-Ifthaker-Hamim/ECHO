@@ -113,8 +113,7 @@
     "vcomp140.dll",
     "vcruntime140.dll",
     "vcruntime140_1.dll",
-    "vcruntime140_threads.dll",
-    ".nonadmin"
+    "vcruntime140_threads.dll"
   ],
   "fn": "vs2015_runtime-14.42.34433-h9531ae6_2.conda",
   "license": "",

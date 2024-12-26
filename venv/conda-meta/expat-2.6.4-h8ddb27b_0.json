@@ -23,8 +23,7 @@
     "Library/lib/libexpat.lib",
     "Library/share/doc/expat/AUTHORS",
     "Library/share/doc/expat/changelog",
-    "Library/share/man/man1/xmlwf.1",
-    ".nonadmin"
+    "Library/share/man/man1/xmlwf.1"
   ],
   "fn": "expat-2.6.4-h8ddb27b_0.conda",
   "license": "MIT",

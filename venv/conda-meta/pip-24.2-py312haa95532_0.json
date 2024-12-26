@@ -4,9 +4,9 @@
   "channel": "https://repo.anaconda.com/pkgs/main/win-64",
   "constrains": [],
   "depends": [
-    "python >=3.12,<3.13.0a0",
     "setuptools",
-    "wheel"
+    "wheel",
+    "python >=3.12,<3.13.0a0"
   ],
   "extracted_package_dir": "C:\\Users\\USER\\anaconda3\\pkgs\\pip-24.2-py312haa95532_0",
   "files": [
@@ -864,8 +864,7 @@
     "Scripts/pip-script.py",
     "Scripts/pip.exe",
     "Scripts/pip3-script.py",
-    "Scripts/pip3.exe",
-    ".nonadmin"
+    "Scripts/pip3.exe"
   ],
   "fn": "pip-24.2-py312haa95532_0.conda",
   "license": "MIT",

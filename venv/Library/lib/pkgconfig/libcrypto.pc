@@ -1,4 +1,4 @@
-prefix=D:/Hamim/OS Project/venv/Library 
+prefix=D:/Hamim/Echo/venv/Library 
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

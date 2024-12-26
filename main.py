@@ -6,6 +6,7 @@ import speech_recognition as sr
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox, Label, Entry, Frame
 import threading
+import openai  # for OpenAI GPT model
 
 # Initialize the text-to-speech engine
 engine = pyttsx3.init()
@@ -15,6 +16,9 @@ voices = engine.getProperty('voices')
 
 # Default voice selection
 selected_voice = "male"
+
+# Set your OpenAI API key here
+openai.api_key = "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"
 
 # Function to set the voice
 def set_voice(voice_type):
@@ -48,25 +52,44 @@ def speak(text):
 
 # Function to execute the command
 def execute_command(command):
-    if "find" in command:
-        search_item = command.replace("find ", "")
-        search_and_open(search_item)
-    elif command in commands:
-        path_or_command = commands[command]
-        try:
-            if isinstance(path_or_command, list):
-                subprocess.Popen(path_or_command)
-            else:
-                subprocess.Popen(path_or_command)
-            app_name = command.replace("open ", "")
-            update_status(f"Opening: {app_name}", "green")
-            speak(f"Opening {app_name}...")
-        except Exception as e:
-            update_status(f"Error: {str(e)}", "red")
-            speak("Error opening the application.")
+    if command in commands:
+        path = commands[command]
+        if isinstance(path, list):
+            subprocess.Popen(path)
+        else:
+            subprocess.Popen(path)
+        update_status(f"Executing command: {command}", "green")
+        speak(f"Executing {command}")
     else:
         update_status("Command not recognized.", "red")
         speak("Command not recognized.")
+
+# Function to process the command or question
+def process_command_or_question(command):
+    # Detect if the command is a question
+    if '?' in command:
+        return get_answer_from_question(command)
+    else:
+        # Else, execute the command
+        execute_command(command)
+        return None
+
+# Function for question answering using OpenAI GPT
+def get_answer_from_question(question):
+    try:
+        response = openai.Completion.create(
+            model="gpt-3.5-turbo",  # or gpt-4 if you prefer
+            messages=[{"role": "user", "content": question}],
+            max_tokens=100
+        )
+        answer = response['choices'][0]['message']['content']
+        update_status(f"Answer: {answer}", "green")
+        speak(answer)
+        return answer
+    except Exception as e:
+        speak("Sorry, I couldn't fetch an answer. Please try again.")
+        update_status(f"Error: {str(e)}", "red")
+        return None
 
 # Function to search and open a folder or file
 def search_and_open(target_name):
@@ -217,10 +240,10 @@ def toggle_listening_state(command):
         speak("Voice recognition activated. Listening for commands.")
     elif "stop listening" in command:
         listening_active = False
-        update_status("Voice recognition deactivated. Waiting for 'Hey Echo'.", "red")
-        speak("Voice recognition deactivated. Waiting for 'Hey Echo'.")
+        update_status("Voice recognition deactivated.", "red")
+        speak("Voice recognition deactivated.")
 
-# Function to listen continuously
+# Function to listen for commands
 def manage_listening():
     global listening_active
     while True:
@@ -230,7 +253,7 @@ def manage_listening():
                 if "stop listening" in command:
                     toggle_listening_state(command)
                 else:
-                    execute_command(command)
+                    process_command_or_question(command)
                     listening_active = False
                     update_status("Command executed. Waiting for 'Hey Echo'.", "red")
         else:
@@ -238,12 +261,8 @@ def manage_listening():
                 toggle_listening_state(command)
         root.update()
 
-# Run background listening thread
-def run_listening_thread():
-    listening_thread = threading.Thread(target=manage_listening)
-    listening_thread.daemon = True
-    listening_thread.start()
+# Start listening in a separate thread
+threading.Thread(target=manage_listening, daemon=True).start()
 
-if __name__ == "__main__":
-    run_listening_thread()
-    root.mainloop()
+# Run the GUI main loop
+root.mainloop()

@@ -1077,8 +1077,7 @@
     "Library/lib/tk8.6/unsupported.tcl",
     "Library/lib/tk8.6/xmfbox.tcl",
     "Library/lib/tk86t.lib",
-    "Library/lib/tkstub86.lib",
-    ".nonadmin"
+    "Library/lib/tkstub86.lib"
   ],
   "fn": "tk-8.6.14-h0416ee5_0.conda",
   "license": "TCL",
@@ -7322,7 +7321,7 @@
         "path_type": "hardlink",
         "prefix_placeholder": "C:\\b\\abs_17sr80_iza\\croot\\tk_1714770602079\\_h_env",
         "sha256": "495d5d2b6618e255f92eaaeae67f603f687f98f8705ad4cba67d04fed64e370d",
-        "sha256_in_prefix": "21c06a02160fec74fbe150d92109c09df50eedb7c4219d7bf71f0a3f307d5561",
+        "sha256_in_prefix": "332e0ef115f0db1661bdd809aa8d6a8a6c44a5e9ca1f21f9db1ad153ff9768df",
         "size_in_bytes": 8163
       },
       {

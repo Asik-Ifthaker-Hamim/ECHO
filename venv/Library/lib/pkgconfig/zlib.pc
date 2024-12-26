@@ -1,8 +1,8 @@
-prefix=D:/Hamim/OS Project/venv/Library
-exec_prefix=D:/Hamim/OS Project/venv/Library
-libdir=D:/Hamim/OS Project/venv/Library/lib
-sharedlibdir=D:/Hamim/OS Project/venv/Library/lib
-includedir=D:/Hamim/OS Project/venv/Library/include
+prefix=D:/Hamim/Echo/venv/Library
+exec_prefix=D:/Hamim/Echo/venv/Library
+libdir=D:/Hamim/Echo/venv/Library/lib
+sharedlibdir=D:/Hamim/Echo/venv/Library/lib
+includedir=D:/Hamim/Echo/venv/Library/include
 
 Name: zlib
 Description: zlib compression library

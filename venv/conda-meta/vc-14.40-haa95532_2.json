@@ -7,9 +7,7 @@
     "vs2015_runtime >=14.42.34433"
   ],
   "extracted_package_dir": "C:\\Users\\USER\\anaconda3\\pkgs\\vc-14.40-haa95532_2",
-  "files": [
-    ".nonadmin"
-  ],
+  "files": [],
   "fn": "vc-14.40-haa95532_2.conda",
   "license": "BSD-3-Clause",
   "link": {

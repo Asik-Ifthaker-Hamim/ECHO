@@ -941,8 +941,7 @@
     "Lib/site-packages/setuptools/version.py",
     "Lib/site-packages/setuptools/warnings.py",
     "Lib/site-packages/setuptools/wheel.py",
-    "Lib/site-packages/setuptools/windows_support.py",
-    ".nonadmin"
+    "Lib/site-packages/setuptools/windows_support.py"
   ],
   "fn": "setuptools-75.1.0-py312haa95532_0.conda",
   "license": "MIT",

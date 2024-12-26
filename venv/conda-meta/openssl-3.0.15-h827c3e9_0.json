@@ -171,8 +171,7 @@
     "etc/conda/activate.d/openssl_activate.sh",
     "etc/conda/deactivate.d/openssl_deactivate.bat",
     "etc/conda/deactivate.d/openssl_deactivate.ps1",
-    "etc/conda/deactivate.d/openssl_deactivate.sh",
-    ".nonadmin"
+    "etc/conda/deactivate.d/openssl_deactivate.sh"
   ],
   "fn": "openssl-3.0.15-h827c3e9_0.conda",
   "license": "Apache-2.0",
@@ -191,7 +190,7 @@
         "path_type": "hardlink",
         "prefix_placeholder": "C:\\\\b\\\\abs_25mqphatbo\\\\croot\\\\openssl_1725545335595\\\\_h_env",
         "sha256": "11ae56eed2ddd9a20ebd8552709e70b647f9138fa028a86173446a3065b85d54",
-        "sha256_in_prefix": "9bf9a5e2640c5218d2efd85aed0383aa99a2aa9415b9c5e1b2863909e7d00b6e",
+        "sha256_in_prefix": "6684d78b67c28b246532df1a2ce179b5269f9238d07cb3eac191ff5091879772",
         "size_in_bytes": 7268
       },
       {
@@ -1230,7 +1229,7 @@
         "path_type": "hardlink",
         "prefix_placeholder": "C:/b/abs_25mqphatbo/croot/openssl_1725545335595/_h_env",
         "sha256": "ebee686ed449861ded223dcfcd8e383006bfe416dc94d7421b7d37abcac63b1c",
-        "sha256_in_prefix": "da283567fb68ad3a3322efa7998f3145568d4cfb0cec97b5cc35f3f59e5ba454",
+        "sha256_in_prefix": "94a6ed835ded5215e2ea936676e5872e79bb1f1aca8e88e45855bcb134695273",
         "size_in_bytes": 325
       },
       {
@@ -1239,7 +1238,7 @@
         "path_type": "hardlink",
         "prefix_placeholder": "C:/b/abs_25mqphatbo/croot/openssl_1725545335595/_h_env",
         "sha256": "2fb35188eca6da38e89d8d26198df71345d8e2fdf7f8a6fabe5d3ccb155deb40",
-        "sha256_in_prefix": "cb3f09b62daa39bcca9442bb5aa7a23c51d3cad37ad9b0b67f1e7f77510547f0",
+        "sha256_in_prefix": "4c1169bff619aa04b9413949dfb8475abec9dac8b37e9a932c3f148381ec9749",
         "size_in_bytes": 325
       },
       {
@@ -1248,7 +1247,7 @@
         "path_type": "hardlink",
         "prefix_placeholder": "C:/b/abs_25mqphatbo/croot/openssl_1725545335595/_h_env",
         "sha256": "6a85424f9f7d43617a5b65d9438775dabc703bbf8cc8544e218b7cd5171fb5fe",
-        "sha256_in_prefix": "77d48c2471007a6a1fa03b964d5313927fb4ff6a620e7b5aa9cf47c89b908cbc",
+        "sha256_in_prefix": "b8aa712ca3f78d58d2c5b79199efd76d677b6423fdc7046c4a11b9e4eaacdeec",
         "size_in_bytes": 280
       },
       {

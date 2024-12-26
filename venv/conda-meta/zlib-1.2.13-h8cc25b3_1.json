@@ -18,8 +18,7 @@
     "Library/lib/zlib.lib",
     "Library/lib/zlibstatic.lib",
     "Library/share/man/man3/zlib.3",
-    "zlib.dll",
-    ".nonadmin"
+    "zlib.dll"
   ],
   "fn": "zlib-1.2.13-h8cc25b3_1.conda",
   "license": "Zlib",
@@ -59,7 +58,7 @@
         "path_type": "hardlink",
         "prefix_placeholder": "C:/b/abs_72khlqt_kh/croot/zlib_1714514696139/_h_env",
         "sha256": "98c186a7407d4aa5524b6755406948c1ad9be2bf6a525dd8552df97e1901498d",
-        "sha256_in_prefix": "08b5672d8d7f59faf366b9a33a3986acf53996c2de58a325114d8506d2b5f3e4",
+        "sha256_in_prefix": "4bbb0c412cf4ff2a23bc58bbbf3c6ef2c899530a122d10d8784eff080a37940d",
         "size_in_bytes": 520
       },
       {

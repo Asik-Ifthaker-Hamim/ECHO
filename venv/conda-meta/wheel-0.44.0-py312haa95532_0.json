@@ -71,8 +71,7 @@
     "Lib/site-packages/wheel/vendored/vendor.txt",
     "Lib/site-packages/wheel/wheelfile.py",
     "Scripts/wheel-script.py",
-    "Scripts/wheel.exe",
-    ".nonadmin"
+    "Scripts/wheel.exe"
   ],
   "fn": "wheel-0.44.0-py312haa95532_0.conda",
   "license": "MIT",
