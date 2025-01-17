@@ -1,4 +1,4 @@
-# ECHO – Enhanced Communication and Human Optimization 🌐
+# ECHO – Efficient Command Handling Operator 🌐
 
 ECHO is an intelligent assistant designed to streamline communication and enhance user productivity. This project integrates advanced features to provide a responsive, efficient, and adaptive user experience.
 
@@ -78,3 +78,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgements 🌟
 
 A big thanks to the contributors and the open-source community for supporting the development of ECHO.
+
