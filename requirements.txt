@@ -1,5 +1,7 @@
 speechrecognition
-PyAudio
+pyaudio
 pyttsx3 
 pyautogui
 openai
+PyQt5
+sounddevice
