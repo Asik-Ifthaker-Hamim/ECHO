@@ -1,0 +1,37 @@
+{
+  "name": "echo-desktop",
+  "version": "2.0.0",
+  "description": "ECHO - Efficient Command Handling Operator Desktop Application",
+  "main": "electron/main.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:vite\" \"npm run dev:backend\"",
+    "dev:vite": "vite",
+    "dev:backend": "cd backend && uvicorn app.main:app --reload --host 127.0.0.1 --port 8000",
+    "dev:electron": "electron .",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11",
+    "electron": "^33.4.0",
+    "electron-builder": "^25.1.8",
+    "concurrently": "^9.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asik-Ifthaker-Hamim/ECHO.git"
+  },
+  "keywords": ["voice", "assistant", "desktop", "electron", "react"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Asik-Ifthaker-Hamim/ECHO/issues"
+  },
+  "homepage": "https://github.com/Asik-Ifthaker-Hamim/ECHO#readme"
+}
